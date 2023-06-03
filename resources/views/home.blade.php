@@ -67,7 +67,7 @@
         <div class="box1 clearfix">
             <div class="box2 clearfix">
                 <img src="img/call_girl.png" alt="">
-                <p>Need a helping hand? Call our office search<br>helpline for advice - <span>0800 368 0380</span></p>
+                <p>Hola <br>helpline for advice - <span>0800 368 0380</span></p>
             </div>
         </div>
     </div>
