@@ -1,4 +1,4 @@
-{{  }}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,22 +12,22 @@
 <meta name="author" content="Your name">
 <meta name = "format-detection" content = "telephone=no" />
 <!--CSS-->
-<link rel="stylesheet" href="css/bootstrap.css" >
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/camera.css">
-<link rel="stylesheet" href="css/contact-form.css">
-<link rel="stylesheet" href="fonts/font-awesome.css">
+<link rel="stylesheet" href="{{ Request::root() }}/resources/css/bootstrap.css" >
+<link rel="stylesheet" href="{{ Request::root() }}/resources/css/style.css">
+<link rel="stylesheet" href="{{ Request::root() }}/resources/css/animate.css">
+<link rel="stylesheet" href="{{ Request::root() }}/resources/css/camera.css">
+<link rel="stylesheet" href="{{ Request::root() }}/resources/css/contact-form.css">
+<link rel="stylesheet" href="{{ Request::root() }}/resources/fonts/font-awesome.css">
 <!--JS-->
-<script src="js/jquery.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.mobilemenu.js"></script>
-<script src="js/jquery.equalheights.js"></script> 
-<script src="js/camera.js"></script>
-<script src="js/TMForm.js"></script>
-<script src="js/modal.js"></script>  
-<script src="js/bootstrap-filestyle.js"></script> 
+<script src="{{ Request::root() }}/resources/js/jquery.js"></script>
+<script src="{{ Request::root() }}/resources/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="{{ Request::root() }}/resources/js/jquery.easing.1.3.js"></script>
+<script src="{{ Request::root() }}/resources/s/jquery.mobilemenu.js"></script>
+<script src="{{ Request::root() }}/resources/js/jquery.equalheights.js"></script> 
+<script src="{{ Request::root() }}/resources/js/camera.js"></script>
+<script src="{{ Request::root() }}/resources/js/TMForm.js"></script>
+<script src="{{ Request::root() }}/resources/js/modal.js"></script>  
+<script src="{{ Request::root() }}/resources/js/bootstrap-filestyle.js"></script> 
 
 <script>
     $(document).ready(function(){
@@ -35,9 +35,9 @@
     });
 </script>
 <!--[if (gt IE 9)|!(IE)]><!-->
-<script src="js/wow/wow.js"></script>
-<script src="js/wow/device.min.js"></script>
-<script src="js/jquery.mobile.customized.min.js"></script>
+<script src="{{ Request::root() }}/resources/js/wow/wow.js"></script>
+<script src="{{ Request::root() }}/resources/js/wow/device.min.js"></script>
+<script src="{{ Request::root() }}/resources/js/jquery.mobile.customized.min.js"></script>
 <script>
     $(document).ready(function () {       
       if ($('html').hasClass('desktop')) {
@@ -63,7 +63,7 @@
 <!--header-->
 <header class="clearfix">
     <div class="container">
-        <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
+        <h1 class="navbar-brand navbar-brand_"><a href="index.html"><img src="../img/logo.png" alt="logo"></a></h1>
         <div class="box1 clearfix">
             <div class="box2 clearfix">
                 <img src="img/call_girl.png" alt="">
@@ -406,7 +406,7 @@
     </div>
   <!-- {%FOOTER_LINK} -->
 </footer>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/tm-scripts.js"></script>
+<script src="{{ Request::root() }}/resources/js/bootstrap.min.js"></script>
+<script src="{{ Request::root() }}/resources/js/tm-scripts.js"></script>
 </body>
 </html>
