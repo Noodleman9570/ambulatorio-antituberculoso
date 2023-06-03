@@ -12,22 +12,22 @@
 <meta name="author" content="Your name">
 <meta name = "format-detection" content = "telephone=no" />
 <!--CSS-->
-<link rel="stylesheet" href="{{ Request::root() }}/resources/css/bootstrap.css" >
-<link rel="stylesheet" href="{{ Request::root() }}/resources/css/style.css">
-<link rel="stylesheet" href="{{ Request::root() }}/resources/css/animate.css">
-<link rel="stylesheet" href="{{ Request::root() }}/resources/css/camera.css">
-<link rel="stylesheet" href="{{ Request::root() }}/resources/css/contact-form.css">
-<link rel="stylesheet" href="{{ Request::root() }}/resources/fonts/font-awesome.css">
+<link rel="stylesheet" href="../css/bootstrap.css" >
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ Request::root() }}/css/animate.css">
+<link rel="stylesheet" href="{{ Request::root() }}/css/camera.css">
+<link rel="stylesheet" href="{{ Request::root() }}/css/contact-form.css">
+<link rel="stylesheet" href="{{ Request::root() }}/fonts/font-awesome.css">
 <!--JS-->
-<script src="{{ Request::root() }}/resources/js/jquery.js"></script>
-<script src="{{ Request::root() }}/resources/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="{{ Request::root() }}/resources/js/jquery.easing.1.3.js"></script>
-<script src="{{ Request::root() }}/resources/s/jquery.mobilemenu.js"></script>
-<script src="{{ Request::root() }}/resources/js/jquery.equalheights.js"></script> 
-<script src="{{ Request::root() }}/resources/js/camera.js"></script>
-<script src="{{ Request::root() }}/resources/js/TMForm.js"></script>
-<script src="{{ Request::root() }}/resources/js/modal.js"></script>  
-<script src="{{ Request::root() }}/resources/js/bootstrap-filestyle.js"></script> 
+<script src="{{ Request::root() }}/js/jquery.js"></script>
+<script src="{{ Request::root() }}/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="{{ Request::root() }}/js/jquery.easing.1.3.js"></script>
+<script src="{{ Request::root() }}/s/jquery.mobilemenu.js"></script>
+<script src="{{ Request::root() }}/js/jquery.equalheights.js"></script> 
+<script src="{{ Request::root() }}/js/camera.js"></script>
+<script src="{{ Request::root() }}/js/TMForm.js"></script>
+<script src="{{ Request::root() }}/js/modal.js"></script>  
+<script src="{{ Request::root() }}/js/bootstrap-filestyle.js"></script> 
 
 <script>
     $(document).ready(function(){
@@ -35,9 +35,9 @@
     });
 </script>
 <!--[if (gt IE 9)|!(IE)]><!-->
-<script src="{{ Request::root() }}/resources/js/wow/wow.js"></script>
-<script src="{{ Request::root() }}/resources/js/wow/device.min.js"></script>
-<script src="{{ Request::root() }}/resources/js/jquery.mobile.customized.min.js"></script>
+<script src="{{ Request::root() }}/js/wow/wow.js"></script>
+<script src="{{ Request::root() }}/js/wow/device.min.js"></script>
+<script src="{{ Request::root() }}/js/jquery.mobile.customized.min.js"></script>
 <script>
     $(document).ready(function () {       
       if ($('html').hasClass('desktop')) {
@@ -71,6 +71,9 @@
             </div>
         </div>
     </div>
+
+
+
     <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
         <div class="container">
             <ul class="nav sf-menu clearfix">
@@ -406,7 +409,7 @@
     </div>
   <!-- {%FOOTER_LINK} -->
 </footer>
-<script src="{{ Request::root() }}/resources/js/bootstrap.min.js"></script>
-<script src="{{ Request::root() }}/resources/js/tm-scripts.js"></script>
+<script src="{{ Request::root() }}/js/bootstrap.min.js"></script>
+<script src="{{ Request::root() }}/js/tm-scripts.js"></script>
 </body>
 </html>

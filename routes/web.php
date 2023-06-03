@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +13,22 @@ use App\Http\Controllers\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::view('/', "home")->name('home');
-Route::view('/login', "login")->name('login');
-Route::view('/register', "register")->name('register');
-Route::view('/panel', "panel")->middleware('auth')->name('panel');
 
-Route::post('/validar-registro', [LoginController::class, 'register'])
-    ->name('validar-registro');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/home', function () {
+    return view('home');
+});
 
-Route::post('/inicia-sesion', [LoginController::class, 'login'])
-    ->name('inicia-sesion');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+require __DIR__.'/auth.php';
