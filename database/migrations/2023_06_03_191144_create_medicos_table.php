@@ -22,11 +22,12 @@ return new class extends Migration
             $table->string('medics_email', 40)->nullable(false);
             $table->date('medics_fechn', 40)->nullable(false);
             $table->string('medics_direc', 255)->nullable(false);
-            // $table->foreign('espcmd_codig')
-            //         ->references('espcmd_codig')
-            //         ->on('tabm_espcmd')
-            //         ->onDelete('cascade')
-            //         ->onUpdate('cascade');
+            $table->integer('espcmd_codig')->unsigned();
+            $table->foreign('espcmd_codig')
+                    ->references('espcmd_codig')
+                    ->on('tabm_espcmd')
+                    ->onDelete('cascade')
+                    ->onUpdate('cascade');
             $table->timestamps();         
         });
     }
