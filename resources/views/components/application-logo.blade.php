@@ -1,1 +1,1 @@
-<img src="{{ Request::root() }}/img/descarga (2).png" alt="Logo de Corposalud" width="50px">
+<img src="{{ Request::root() }}/img/descarga (2).png" alt="Logo de Corposalud" width="120px">
