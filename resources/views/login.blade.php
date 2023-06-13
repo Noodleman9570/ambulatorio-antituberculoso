@@ -85,7 +85,7 @@ margin: 30px;
   background-image: -o-linear-gradient(160deg, #0a382994 0%, #5bdab1 100%)!important;
   background-image: linear-gradient(160deg, #0a382994 0%, #5bdab1 100%)!important;
   
-  color: #ffffff!important;
+  color: #d4f5f7!important;
 }
 .login-button {
     padding-right: 0px;
@@ -107,8 +107,8 @@ margin: 30px;
 
  </style>
 </head>
-<body class="d-flex align-items-center">
-  <div class="container">
+<body class="d-flex align-items-center ">
+  <div class="container ">
     <div class="row justify-content-center" style="margin:20px;">
       <div class="col-lg-6 col-md-8 login-box">
         <div class="col-lg-12 login-title">
