@@ -67,7 +67,7 @@
         <div class="box1 clearfix">
             <div class="box2 clearfix">
                 <img src="img/call_girl.png" alt="">
-                <p>Hola <br>helpline for advice - <span>0800 368 0380</span></p>
+                <p>Contacta a éste número telefónico <br> por si estás teniendo problemas <span>+58 414 371 9797</span></p>
             </div>
         </div>
     </div>
@@ -77,8 +77,8 @@
     <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
         <div class="container">
             <ul class="nav sf-menu clearfix">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="sub-menu"><a href="index-1.html">About staff</a><span></span>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li class="sub-menu"><a href="index-1.html">Sobre la página</a><span></span>
                     <ul class="submenu">
         				<li><a href="#">history</a></li>
         				<li><a href="#">news</a><span class="fa fa-angle-right"></span>
