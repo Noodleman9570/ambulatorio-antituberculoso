@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home', function () {
     return view('home');
 });
 
@@ -31,6 +29,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-//Route::get('/');
+Route::controller(UserController::class)->group(function () {
+
+    Route::get('/users', 'index')->name('users.index');
+    Route::post('/users', 'store')->name('users.store');
+    //Route::get('/edit-user/{user_id}', 'edit');
+    Route::get('/users/delete/{id}', 'destroy')->name('users.delete');
+});
 
 require __DIR__.'/auth.php';
