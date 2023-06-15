@@ -34,7 +34,7 @@ Route::controller(UserController::class)->group(function () {
     Route::get('/users', 'index')->name('users.index');
     Route::post('/users', 'store')->name('users.store');
     //Route::get('/edit-user/{user_id}', 'edit');
-    Route::get('/users/delete/{id}', 'destroy')->name('users.delete');
+    Route::delete('/users/delete/{id}', 'destroy')->name('users.delete');
 });
 
 require __DIR__.'/auth.php';
